@@ -13,9 +13,9 @@ function IndexComponent() {
     <TransitionGroup>
       <CSSTransition key={location.key} timeout={500}>
         <Routes location={location}>
-          <Route path="/portfolio"  element={<HomeComponent />} />
-          <Route path="/about" element={<AboutComponent />} />
-          <Route path="/skill" element={<PortfolioComponent />} />
+          <Route path="/portfolio/"  element={<HomeComponent />} />
+          <Route path="/portfolio/about/" element={<AboutComponent />} />
+          <Route path="/portfolio/skill/" element={<PortfolioComponent />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
