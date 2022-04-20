@@ -9,6 +9,7 @@ function HomeComponent() {
         animate={{ width: "100%" }}
         exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
       >
+        
         <div className="home__img">
           <img src="./img/fotoDePerfil.jpg" />
           <div>
@@ -23,13 +24,13 @@ function HomeComponent() {
               <h3>contato</h3>
               <div className="home__contactCover">
                 <a href="https://www.linkedin.com/in/isaque-correa/">
-                  <img src="img/img-icon/icons-linkedin.png" />
+                  <img src="./img/img-icon/icons-linkedin.png" />
                 </a>
                 <a href="mailto:icorrea.developer@gmail.com">
                   <img src="./img/img-icon/icons-gmail.png" />
                 </a>
                 <a href="https://github.com/Isaque-correa">
-                  <img src="img/img-icon/icons-github.png" />
+                  <img src="./img/img-icon/icons-github.png" />
                 </a>
               </div>
             </div>

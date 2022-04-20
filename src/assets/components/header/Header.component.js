@@ -16,13 +16,13 @@ function HeaderComponent() {
         <nav className="header__nav">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/portfolio">Home</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/portfolio">Portfolio</Link>
+              <Link to="/skill">Portfolio</Link>
             </li>
           </ul>
         </nav>

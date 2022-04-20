@@ -11,11 +11,11 @@ function IndexComponent() {
   const location = useLocation();
   return (
     <TransitionGroup>
-      <CSSTransition key={location.key} timeout={500} className="transition">
+      <CSSTransition key={location.key} timeout={500}>
         <Routes location={location}>
-          <Route path="/" exact element={<HomeComponent />} />
+          <Route path="/portfolio"  element={<HomeComponent />} />
           <Route path="/about" element={<AboutComponent />} />
-          <Route path="/portfolio" element={<PortfolioComponent />} />
+          <Route path="/skill" element={<PortfolioComponent />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
