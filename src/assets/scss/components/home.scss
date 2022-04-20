@@ -1,0 +1,50 @@
+.home {
+    @include main;
+    flex-direction: column;
+
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+
+            border-radius: 50%;
+            width: 40%;
+        }
+    }
+
+    &__title {
+        @include sans-medium;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    &__sub {
+        @include sans-light;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    &__contact {
+        margin-top: 30px;
+
+        h3 {
+            font-size: 24px;
+            @include sans-regular;
+        }
+    }
+
+    &__contactCover {
+        display: flex;
+        margin-top: 20px;
+
+        img {
+            width: 50%;
+            
+        }
+        a{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import 'reset.scss';
+
+@mixin  sans-light {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+@mixin  sans-regular {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+@mixin  sans-medium {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+@mixin main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    height: 61vh;
+    background-color: #e0e0e0;
+}
