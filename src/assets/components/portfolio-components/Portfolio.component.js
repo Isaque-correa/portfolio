@@ -56,14 +56,14 @@ function PortfolioComponent() {
               <figure key={id}>
                 <img className="portfolio__img" src={img} alt="portfolio" />
                 <div className="portfolio__icons">
-                  <img src={iconHml5} alt="HTML5" />
-                  <img src={iconCss3}  alt="CSS3"/>
-                  <img src={iconJavascript} alt="JavaScript" />
-                  <img src={iconJson} alt="Json"/>
-                  <img src={iconJquery} alt="Jquery"/>
-                  <img src={iconScss}  alt="SCSS"/>
-                  <img src={iconReact} alt="React"/>
-                  <img src={iconBootstrap} alt="Bootstrap"/>
+                  <img src={iconHml5} />
+                  <img src={iconCss3} />
+                  <img src={iconJavascript} />
+                  <img src={iconJson} />
+                  <img src={iconJquery} />
+                  <img src={iconScss} />
+                  <img src={iconReact} />
+                  <img src={iconBootstrap} />
                 </div>
 
                 <figcaption>

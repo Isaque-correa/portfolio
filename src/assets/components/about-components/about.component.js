@@ -10,7 +10,7 @@ function AboutComponent() {
         exit={{x: window.innerWidth, transition:{duration:0.1}}}
       >
         <div className="about__cover">
-          <img src="./img/thumb.png" />
+          <img src="./img/thumb.png" alt="Thumbnail"/>
         </div>
 
         <div className="about__info">

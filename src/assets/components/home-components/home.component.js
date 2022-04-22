@@ -11,7 +11,7 @@ function HomeComponent() {
       >
         
         <div className="home__img">
-          <img src="./img/fotoDePerfil.jpg" />
+          <img src="./img/fotoDePerfil.jpg" alt="foto de perfil" />
           <div>
             <ReactTypingEffect
               className="home__sub"
@@ -24,13 +24,13 @@ function HomeComponent() {
               <h3>contato</h3>
               <div className="home__contactCover">
                 <a href="https://www.linkedin.com/in/isaque-correa/">
-                  <img src="./img/img-icon/icons-linkedin.png" />
+                  <img src="./img/img-icon/icons-linkedin.png" alt="Linkedin" />
                 </a>
                 <a href="mailto:icorrea.developer@gmail.com">
-                  <img src="./img/img-icon/icons-gmail.png" />
+                  <img src="./img/img-icon/icons-gmail.png" alt="Gmail" />
                 </a>
                 <a href="https://github.com/Isaque-correa">
-                  <img src="./img/img-icon/icons-github.png" />
+                  <img src="./img/img-icon/icons-github.png" alt="GitHub" />
                 </a>
               </div>
             </div>

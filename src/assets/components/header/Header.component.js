@@ -19,10 +19,10 @@ function HeaderComponent() {
               <Link to="/portfolio/">Home</Link>
             </li>
             <li>
-              <Link to="/portfolio/about">About</Link>
+              <Link to="/portfolio/about/">About</Link>
             </li>
             <li>
-              <Link to="/portfolio/skill">Portfolio</Link>
+              <Link to="/portfolio/skill/">Portfolio</Link>
             </li>
           </ul>
         </nav>
