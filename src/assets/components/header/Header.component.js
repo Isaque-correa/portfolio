@@ -30,7 +30,7 @@ function HeaderComponent() {
               <Link to="/portfolio/">Home</Link>
             </li>
             <li onClick={closeMobileMenu}>
-              <Link to="/portfolio//about">About</Link>
+              <Link to="/portfolio/about">About</Link>
             </li>
             <li onClick={closeMobileMenu}>
               <Link to="/portfolio/skill">Portfolio</Link>
