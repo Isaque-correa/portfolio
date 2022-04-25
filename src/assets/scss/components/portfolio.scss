@@ -4,7 +4,8 @@
     justify-content: space-around;
     height: 80vh;
     margin-top: 5%;
-    &__title{
+
+    &__title {
         @include sans-medium;
         font-size: 32px;
         text-transform: uppercase;
@@ -22,6 +23,11 @@
             width: 100%;
             margin-right: 5%;
         }
+
+        @include mobile {
+
+            align-content: space-between;
+        }
     }
 
     &__cover::-webkit-scrollbar {
@@ -30,17 +36,29 @@
 
     &__img {
         height: 35vh;
+
+        @include mobile {
+            width: 100%;
+        }
     }
 
     &__icons {
         display: flex;
         justify-content: center;
 
+
         img {
             background-color: #FFF;
             border-radius: 30px;
             margin-right: 5px;
-           
+
+            @include mobile {
+                background-color: unset;
+                width: 28px;
+                border: none;
+
+            }
+
         }
     }
 
@@ -50,7 +68,10 @@
         margin-top: 10px;
         font-size: 25px;
         margin-bottom: 10px;
-        
+        @include mobile{
+            font-size: 20px;
+        }
+
     }
 
     &__links {
@@ -70,6 +91,9 @@
             border-radius: 10px;
             border: 1px solid #000;
             transition: 0.5s;
+            @include mobile{
+                font-size: 10px;
+            }
         }
 
         a:hover {

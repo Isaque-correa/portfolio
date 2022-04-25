@@ -22,3 +22,16 @@
     height: 61vh;
     background-color: #e0e0e0;
 }
+
+@mixin mobile {
+    @media (min-width: 280px)and(max-width: 415px) {
+        @content;
+    }
+
+}
+@mixin tablet {
+    @media (min-width: 540px)and(max-width: 1024px) {
+        @content;
+    }
+
+}

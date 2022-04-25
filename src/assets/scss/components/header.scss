@@ -3,10 +3,26 @@
     background-color: black;
     padding: 10px;
 
+    @include mobile {
+        flex-direction: column-reverse;
+    }
+    @include tablet {
+        flex-direction: column;
+    }
+
     &__cover {
         width: 30%;
         margin-right: 20%;
         text-align: center;
+
+        @include mobile {
+            width: 100%;
+        }
+        @include tablet {
+            width: 100%;
+        }
+
+
     }
 
     &__title {
@@ -16,6 +32,15 @@
         text-align: center;
         margin: 10px;
 
+        @include mobile {
+            font-size: 20px;
+            text-align: center;
+        }
+        @include tablet {
+            font-size: 20px;
+            text-align: center;
+            
+        }
 
     }
 
@@ -26,27 +51,91 @@
         justify-content: center;
         align-items: center;
 
-        ul {
+        @include mobile {
+            width: unset;
+        }
+        @include tablet{
+            width: 100%;
+            margin-top: 20px;
+        }
+
+
+        &__menu {
+            cursor: pointer;
+            display: none;
+
+            @include mobile {
+                display: block;
+                position: relative;
+                left: 41%;
+                top: 0;
+
+            }
+        }
+
+        &__menu div {
+            width: 32px;
+            height: 2px;
+            background: #FFF;
+            margin: 8px;
+        }
+
+
+        &__list {
             width: 50%;
             display: flex;
             justify-content: space-between;
             cursor: pointer;
 
+            @include mobile {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                padding-top: 25px;
+                text-align: center;
+                top: -100vh;
+                position: absolute;
+                justify-content: space-around;
+                opacity: 0;
+                transition: 0.5s ease;
+
+            }
 
             li {
                 a {
-                    color: #FFF;
+
                     @include sans-regular;
                     text-decoration: none;
                     margin-right: 10px;
                     font-size: 15px;
                     text-transform: uppercase;
                     transition: 00.5s;
+                    color: #FFF;
+                    
                 }
-                a:hover{
+
+                @include mobile {
+                    margin: 10px;
+                }
+
+                a:hover {
                     color: #7d7d7d;
                 }
             }
+        }
+
+        @include mobile {
+            &__list.active {
+                display: flex;
+                opacity: 1;
+                border-bottom: 1px solid #F0F0F0;
+                border-radius: 0px 0px 10px 10px;
+                top: 49px;
+                transition: 0.5s ease;
+                background: #000;
+
+            }
+
         }
     }
 }
